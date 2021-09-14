@@ -189,3 +189,12 @@ This notebook uses the above 3 models and creates 2 stacked ensembles (with `Lin
   - **Validation RMSE**: 17255.334552412325
 
 **Final model used is the 2nd Ensemble (Random forests and XGBoost)**
+
+## `Modeling/CarPrice_06_Prediction_on_Test_set.ipynb`
+Finally this notebook is used to create predictions on our `test` set using the ensemble model above. The `test` set is processed in the same way as the `train` and `val` sets during feature engineering stage. The model's performance is:
+- **RMSE: 10543.925662683565**
+- **RMSLE: 0.9950522186493146**
+  - In the competition, RMSLE was used as the metric.
+  - The top solutions in the competition's [leaderboard](https://machinehack.com/hackathons/data_hack_mathcothon_car_price_prediction_challenge/leaderboard) fetched an **RMSLE** of about **0.76**
+
+****
